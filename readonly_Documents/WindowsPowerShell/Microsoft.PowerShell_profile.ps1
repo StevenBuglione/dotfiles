@@ -16,12 +16,12 @@ function diff-config {
 }
 
 function apply-config {
-    C:\User\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json	
+    chezmoi merge C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json	
     chezmoi apply
 }
 
 function lazyg-config {
-    chezmoi merge C:\User\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+    chezmoi merge C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
     chezmoi diff
     chezmoi apply
     chezmoi git -- add . 
