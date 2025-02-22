@@ -25,7 +25,16 @@
 					"PackageIdentifier" : "AgileBits.1Password.CLI"
 				},
 				{
+					"PackageIdentifier" : "bmatzelle.Gow"
+				},
+				{
+					"PackageIdentifier" : "Fastfetch-cli.Fastfetch"
+				},
+				{
 					"PackageIdentifier" : "Logitech.LGS"
+				},
+				{
+					"PackageIdentifier" : "Starship.Starship"
 				},
 				{
 					"PackageIdentifier" : "Notepad++.Notepad++"
@@ -47,6 +56,12 @@
 				},
 				{
 					"PackageIdentifier" : "Valve.Steam"
+				},
+				{
+					"PackageIdentifier" : "Docker.DockerDesktop"
+				},
+				{
+					"PackageIdentifier" : "Neovim.Neovim"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
