@@ -1,0 +1,13 @@
+[user]
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIADXEW0ESKUfvgzAYIuHH/Rehcvhm8j4op7VlpLClfvC
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "C:/Users/steve/AppData/Local/1Password/app/8/op-ssh-sign.exe"
+
+[commit]
+  gpgsign = true
+[core]
+	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
