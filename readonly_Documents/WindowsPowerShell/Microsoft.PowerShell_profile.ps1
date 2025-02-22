@@ -3,6 +3,7 @@
 # It sets up aliases and functions to bring a Linux-like feel to PowerShell.
 
 function hmu {
+    chezmoi re-add C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json	
     chezmoi diff
     chezmoi apply
     winget import C:\Users\steve\.config\winget\package.json
@@ -16,12 +17,12 @@ function diff-config {
 }
 
 function apply-config {
-    chezmoi merge C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json	
+    chezmoi re-add C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json	
     chezmoi apply
 }
 
 function lazyg-config {
-    chezmoi merge C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+    chezmoi re-add C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
     chezmoi diff
     chezmoi apply
     chezmoi git -- add . 
@@ -34,6 +35,7 @@ function edit-starship {
 }
 
 function apply-starship {
+    chezmoi re-add C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json	
     chezmoi apply
 }
 
@@ -47,6 +49,7 @@ function edit-profile {
 }
 
 function apply-profile {
+     chezmoi re-add C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json	
      chezmoi apply
      refreshenv
     . $PROFILE
@@ -58,6 +61,7 @@ function edit-winget {
 }
 
 function apply-winget {
+    chezmoi re-add C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json	
     chezmoi apply 
     winget import C:\Users\steve\.config\winget\package.json
     refreshenv
@@ -69,6 +73,7 @@ function edit-choco {
 }
 
 function apply-choco {
+    chezmoi re-add C:\Users\steve\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
     chezmoi apply
     sudo choco install C:\Users\steve\.config\choco\package.config
     refreshenv
